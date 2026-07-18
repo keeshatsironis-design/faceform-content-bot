@@ -1,3 +1,0 @@
-После загрузки патча можно удалить старый файл RAILWAY_NETWORK_FIX.md.
-OPENAI_API_KEY и OPENAI_MODEL больше не нужны ни в GitHub Secrets, ни в Railway.
-Railway-сервис автопостера можно выключить после успешного теста GitHub Actions.
