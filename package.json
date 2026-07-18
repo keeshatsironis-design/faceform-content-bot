@@ -1,6 +1,6 @@
 {
-  "name": "faceform-channel-autoposter",
-  "version": "1.0.0",
+  "name": "faceform-free-rss-autoposter",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "dotenv": "^16.6.1",
-    "openai": "^5.12.2",
     "sharp": "^0.34.3"
   },
   "devDependencies": {

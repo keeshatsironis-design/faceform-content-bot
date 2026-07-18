@@ -65,14 +65,3 @@ export function moscowDateParts(date = new Date()): { date: string; hour: number
   return { date: isoDate, hour: Number(parts.hour), label };
 }
 
-export function parseJsonObject<T>(text: string): T {
-  const trimmed = text.trim();
-  const withoutFence = trimmed
-    .replace(/^```(?:json)?\s*/i, "")
-    .replace(/\s*```$/i, "")
-    .trim();
-  const start = withoutFence.indexOf("{");
-  const end = withoutFence.lastIndexOf("}");
-  if (start < 0 || end < start) throw new Error("Модель не вернула JSON-объект");
-  return JSON.parse(withoutFence.slice(start, end + 1)) as T;
-}
